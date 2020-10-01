@@ -1,0 +1,12 @@
+* Serokell beamer theme
+This is a beamer theme that tries to conform to Serokell brand identity guide.
+
+It is based on [[https://github.com/junwei-wang/beamerthemeNord][beamer theme Nord]], but changed quite heavily.
+
+To use it in your presentation, do
+
+#+BEGIN_SRC bash
+TEXINPUTS=.:/path/to/beamer-theme-serokell/: xelatex <...>
+#+END_SRC
+
+Mind the =:= at the end, otherwise default search path won't be included!
