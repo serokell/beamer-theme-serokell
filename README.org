@@ -3,10 +3,22 @@ This is a beamer theme that tries to conform to Serokell brand identity guide.
 
 It is based on [[https://github.com/junwei-wang/beamerthemeNord][beamer theme Nord]], but changed quite heavily.
 
-To use it in your presentation, do
+To use it in your presentation, add
 
-#+BEGIN_SRC bash
-TEXINPUTS=.:/path/to/beamer-theme-serokell/: xelatex <...>
+#+BEGIN_SRC latex
+\usetheme{Serokell}
 #+END_SRC
 
-Mind the =:= at the end, otherwise default search path won't be included!
+to your beamer presentation, or
+
+#+BEGIN_SRC markdown
+theme: Serokell
+#+END_SRC
+
+to metadata or your pandoc presentation. Build with
+
+#+BEGIN_SRC bash
+TEXINPUTS=.:/path/to/beamer-theme-serokell/: <...>
+#+END_SRC
+
+Mind the =:= at the end of =TEXINPUTS=, otherwise default search path won't be included!
