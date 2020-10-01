@@ -1,0 +1,103 @@
+% Modified by balsoft for NixCon 2020 talk
+
+% List of changes:
+% Change background, white, cyan and yellow to Serokell brand palette colors.
+% Remove styles
+
+% Original work: https://github.com/junwei-wang/beamerthemeNord
+
+% Copyright 2020 by Junwei Wang <i.junwei.wang@gmail.com>
+%
+% This file may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License, either version 1.3c
+% of this license or (at your option) any later version.
+% The latest version of this license is in
+%   http://www.latex-project.org/lppl.txt
+
+\mode<presentation>
+
+%%%%%%%%%%% Serokell color scheme
+
+\definecolor{SerokellDarkBlack}{HTML}{1C1D24}
+\definecolor{SerokellBlack}{HTML}{24252E}
+\definecolor{SerokellMediumBlack}{HTML}{424354}
+\definecolor{SerokellBrightBlack}{HTML}{4D4F62}
+
+\definecolor{SerokellWhite}{HTML}{FFFFFF}
+\definecolor{SerokellBrighterWhite}{HTML}{FFFFFF}
+\definecolor{SerokellBrightestWhite}{HTML}{FFFFFF}
+
+\definecolor{SerokellCyan}{HTML}{FFFFFF}
+\definecolor{SerokellBrightCyan}{HTML}{FFFFFF}
+\definecolor{SerokellBlue}{HTML}{81A1C1}
+\definecolor{SerokellBrightBlue}{HTML}{5E81AC}
+
+\definecolor{SerokellRed}{HTML}{BF616A}
+\definecolor{SerokellOrange}{HTML}{D08770}
+\definecolor{SerokellYellow}{HTML}{EBCB8B}
+\definecolor{SerokellGreen}{HTML}{FFFFFF}
+\definecolor{SerokellMagenta}{HTML}{B48EAD}
+
+
+\colorlet{ColorAlertedText}{SerokellRed}
+\colorlet{ColorSubtitle}{SerokellBlue}
+\colorlet{ColorSubsectionInToc}{ColorSubtitle}
+
+\colorlet{ColorBackground}{SerokellBlack}
+\colorlet{ColorText}{SerokellWhite}
+\colorlet{ColorExampleText}{SerokellBrightCyan}
+\colorlet{ColorStructure}{SerokellCyan}
+\colorlet{ColorTitle}{SerokellGreen}
+\colorlet{ColorSubsectionInTocShaded}{SerokellCyan!20!SerokellBrightBlack}
+\colorlet{ColorItemizeItem}{SerokellGreen}
+\colorlet{ColorBlockTitleBg}{SerokellBlack!85}
+\colorlet{ColorExampleBlockTitleBg}{ColorBlockTitleBg}
+\colorlet{ColorAlertedBlockTitleBg}{ColorBlockTitleBg}
+\colorlet{ColorBlockBodyBg}{SerokellDarkBlack}
+\colorlet{ColorExampleBlockBodyBg}{SerokellBrightCyan!50!SerokellBlack}
+\colorlet{ColorAlertedBlockBodyBg}{SerokellRed!50!SerokellBlack}
+\colorlet{ColorBlockBodyFg}{SerokellCyan}
+\colorlet{ColorExampleBlockBodyFg}{SerokellWhite}
+\colorlet{ColorAlertedBlockBodyFg}{SerokellWhite}
+
+
+\colorlet{ColorNormalText}{ColorText}
+\colorlet{ColorFrameTitle}{ColorTitle}
+\colorlet{ColorFrameSubtitle}{ColorSubtitle}
+\colorlet{ColorSectionInToc}{ColorTitle}
+\colorlet{ColorEnumerateColor}{ColorItemizeItem}
+\colorlet{ColorSectionInHeadFoot}{ColorStructure}
+
+%%%%% set beamer color
+\setbeamercolor*{background canvas}{bg=ColorBackground}
+\setbeamercolor*{normal text}{fg=ColorNormalText}
+\setbeamercolor*{alerted text}{fg=ColorAlertedText}
+\setbeamercolor*{example text}{fg=ColorExampleText}
+\setbeamercolor*{structure}{fg=ColorStructure}
+
+\setbeamercolor*{title}{fg=ColorTitle}
+\setbeamercolor*{subtitle}{fg=ColorSubtitle}
+\setbeamercolor*{frametitle}{fg=ColorFrameTitle}
+\setbeamercolor*{framesubtitle}{fg=ColorFrameSubtitle}
+\setbeamercolor*{section in toc}{fg=ColorSectionInToc}
+\setbeamercolor*{subsection in toc}{fg=ColorSubsectionInToc}
+\setbeamercolor*{subsection in toc shaded}{fg=ColorSubsectionInTocShaded}
+
+\setbeamercolor*{itemize item}{fg=ColorItemizeItem}
+\setbeamercolor*{enumerate item}{fg=ColorEnumerateColor}
+
+\setbeamercolor*{section in head/foot}{bg=ColorBackground, fg=ColorSectionInHeadFoot}
+
+\setbeamercolor{block title}{bg=ColorBlockTitleBg,fg=SerokellGreen}
+\setbeamercolor{block title example}{bg=ColorExampleBlockTitleBg,parent={example text}}
+\setbeamercolor{block title alerted}{bg=ColorAlertedBlockTitleBg,parent={alerted text}}
+\setbeamercolor{block body}{bg=ColorBlockBodyBg,fg=ColorBlockBodyFg}
+\setbeamercolor{block body example}{bg=ColorExampleBlockBodyBg,fg=ColorExampleBlockBodyFg}
+\setbeamercolor{block body alerted}{bg=ColorAlertedBlockBodyBg,fg=ColorAlertedBlockBodyFg}
+
+\setbeamercolor{caption}{fg=SerokellBrightBlue}
+
+\mode
+<all>
+
+\endinput
