@@ -2,8 +2,6 @@
 
 \ProvidesPackage{beamerthemeSerokell}[2020/10/01 v0.2.0 A beamer theme using Serokell's brand color scheme]
 
-\logo{\pgfputat{\pgfxy(-15.2,-1)}{\includegraphics[height=0.3cm]{logo-small.png}}}
-
 \mode<presentation>
 
 \RequirePackage{ifthen}
@@ -25,6 +23,7 @@
 \setbeamertemplate{itemize subitem}{$\rightarrow$}
 \setbeamertemplate{itemize subsubitem}{$\bullet$}
 \setbeamertemplate{frametitle}{
+  \vskip4pt
   {\usebeamercolor[fg]{normal text} \mdseries >> }~\boldmath\insertframetitle%
   \hfill\ifx\insertframesubtitle\@empty\else{\usebeamerfont{framesubtitle}\usebeamercolor[fg]{framesubtitle}\insertframesubtitle}\fi
 }
@@ -32,17 +31,15 @@
 
 \setbeamertemplate{headline}
 {%
-\hskip12pt
+\hspace{4mm}
 \begin{beamercolorbox}{section in head/foot}
-\vskip2pt\insertnavigation{\dimexpr\paperwidth-24pt\relax}\vskip5pt
+\vskip2pt\insertnavigation{\dimexpr\paperwidth-8mm\relax}\vskip5pt
 \end{beamercolorbox}%
 }
 
 \setbeamertemplate{footline}{
-  \newbox\serokell@tmpbox
-  \setbox\serokell@tmpbox\hbox{[\insertframenumber/\inserttotalframenumber]}
   \vspace{5.2mm}
-  \hspace{2mm}\noindent\hfill\box\serokell@tmpbox\hspace{2mm}
+  \hspace{7mm}\includegraphics[height=0.25cm]{logo-small.png}\noindent\hfill[\insertframenumber/\inserttotalframenumber]\hspace{7mm}
   \vspace{1.3mm}
 }
 \setbeamertemplate{title page}{
